@@ -1,0 +1,26 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- Secrets: never commit ---
+.env
+*.env
+!.env.example
+
+# --- Local data stores and caches ---
+# A real book, a news store, a quote cache or an odds store is personal
+# data, not source. The app rebuilds what it needs on first run.
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# --- Spreadsheet exports (a real book) ---
+*.xlsx
+
+# --- OS / editor ---
+.DS_Store
+.idea/
+.vscode/
